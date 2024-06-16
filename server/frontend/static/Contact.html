@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Car Dealership</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+          <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    <h1>Contact Us</h1>
+    <div class="container">
+        <div class="contact-info">
+            <h2>General Contact Information</h2>
+            <p><strong>Address:</strong> Car Dealership<br>1234 Elm Street<br>Hometown, NA 56789</p>
+            <p><strong>Phone:</strong><br>Main: (123) 456-7890<br>Sales: (123) 456-7891<br>Service: (123) 456-7892<br>Parts: (123) 456-7893</p>
+            <p><strong>Email:</strong><br>General Inquiries: <a href="mailto:info@cars.com">info@cars.com</a><br>Sales: <a href="mailto:sales@cars.com">sales@cars.com</a><br>Service: <a href="mailto:service@cars.com">service@cars.com</a><br>Parts: <a href="mailto:parts@cars.com">parts@cars.com</a></p>
+            <p><strong>Business Hours:</strong><br>Monday - Friday: 9:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="department-contacts">
+            <h2>Department Contacts</h2>
+            <h3>Sales Department</h3>
+            <p><strong>John Matthews - Sales Manager</strong><br>Phone: (123) 456-7891<br>Email: <a href="mailto:john.matthews@gmail.com">john.matthews@gmail.com</a></p>
+            <h3>Finance Department</h3>
+            <p><strong>Emily Chen - Finance Specialist</strong><br>Phone: (123) 456-7894<br>Email: <a href="mailto:emily.chen@gmail.com">emily.chen@gmail.com</a></p>
+            <h3>Service Department</h3>
+            <p><strong>Michael Rodriguez - Service Manager</strong><br>Phone: (123) 456-7895<br>Email: <a href="mailto:michael.rodriguez@gmail.com">michael.rodriguez@gmail.com</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
